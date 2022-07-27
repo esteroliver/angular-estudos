@@ -1,1 +1,7 @@
-<p>exibir-mensagem works!</p>
+<main>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" #nome (change)='alterarMensagem(nome.value)'>
+    <div class="msg">
+    <p>{{mensagem}}</p>
+    </div>
+</main>
