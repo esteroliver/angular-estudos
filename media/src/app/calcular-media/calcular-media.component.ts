@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { boletim } from "./boletim";
 
 @Component({
   selector: 'app-calcular-media',
@@ -6,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calcular-media.component.css']
 })
 export class CalcularMediaComponent implements OnInit {
-  media: string
+  bol: boletim
+  media: any
   constructor() { 
-    this.media = ''
+    this.bol = new boletim()
+    this.media = 0
   }
 
   ngOnInit(): void {
   }
-  mediaAluno(a: any, b: any, c: any, d: any){
-    var media_aluno: number = ((a * 2) + (b * 2) + (c * 3) + (d * 3))/10
-    this.media = `A média do aluno é: ${media_aluno}`
-
+  mediaCalculada(){
+    this.media = this.bol.calcularMedia()
   }
-
+  
 }

@@ -1,17 +1,16 @@
 <main>
     <label for="nota1">Nota do 1° bimestre:</label>
-    <input type="number" id="nota1" #b1><br>
+    <input type="number" id="nota1" [(ngModel)]="bol.b1"><br>
     <label for="nota2">Nota do 2° bimestre:</label>
-    <input type="number" id="nota2" #b2><br>
+    <input type="number" id="nota2" [(ngModel)]="bol.b2"><br>
     <label for="nota3">Nota do 3° bimestre:</label>
-    <input type="number" id="nota3" #b3><br>
+    <input type="number" id="nota3" [(ngModel)]="bol.b3"><br>
     <label for="nota4">Nota do 4° bimestre:</label>
-    <input type="number" id="nota4" #b4><br>
+    <input type="number" id="nota4" [(ngModel)]="bol.b4"><br>
 
-    <input type="button" value="Calcular" (click)="mediaAluno(b1.value,b2.value,b3.value,b4.value)">
+    <input type="button" value="Calcular" (click)="mediaCalculada()">
     
     <div>
-
         <p>{{media}}</p>
     </div>
 </main>
