@@ -11,5 +11,6 @@ export class boletim{
     }
     calcularMedia(){
         let media: number = ((this.b1 * 2) + (this.b2 * 2) + (this.b3 * 3) + (this.b4 * 3))/10
+        return media
     }
 }
