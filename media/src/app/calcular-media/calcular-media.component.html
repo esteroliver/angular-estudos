@@ -1,30 +1,33 @@
 <link rel="stylesheet" href="calcular-media.component.css">
-<main>
-    <div class="titulo">
-        <h1>Calcular Média</h1>
-    </div>
 
-    <div class="formulario">
-        <label for="nota1">Nota do 1° bimestre:</label>
-        <input type="number" id="nota1" [(ngModel)]="bol.b1"><br>
-        <label for="nota2">Nota do 2° bimestre:</label>
-        <input type="number" id="nota2" [(ngModel)]="bol.b2"><br>
-        <label for="nota3">Nota do 3° bimestre:</label>
-        <input type="number" id="nota3" [(ngModel)]="bol.b3"><br>
-        <label for="nota4">Nota do 4° bimestre:</label>
-        <input type="number" id="nota4" [(ngModel)]="bol.b4"><br>
-        <input type="button" value="Calcular" (click)="mediaCalculada()">
-    </div>
+    <main>
+        <div class="titulo">
+            <h1>Calcular Média</h1>
+        </div>
     
-    <div class="resultado">
-        <p>{{media}}</p>
-    </div>
-
-    <div class="titulo">
-        <h1>Boletim</h1>
-    </div>
-    <div class="boletim">
+        <div class="formulario">
+            <label for="nota1">Nota do 1° bimestre:</label>
+            <input type="number" id="nota1" [(ngModel)]="bol.b1"><br>
+            <label for="nota2">Nota do 2° bimestre:</label>
+            <input type="number" id="nota2" [(ngModel)]="bol.b2"><br>
+            <label for="nota3">Nota do 3° bimestre:</label>
+            <input type="number" id="nota3" [(ngModel)]="bol.b3"><br>
+            <label for="nota4">Nota do 4° bimestre:</label>
+            <input type="number" id="nota4" [(ngModel)]="bol.b4"><br>
+            <input type="button" value="Calcular" class="btn btn-dark" (click)="mediaCalculada()">
+        </div>
         
-    </div>
-</main>
-
+        <div class="resultado">
+            <h2>Resultado - Média</h2>
+            <p>{{media}}</p>
+        </div>
+    
+        <div class="titulo">
+            <h1>Boletim</h1>
+        </div>
+        <div class="boletim">
+            
+        </div>
+    </main>
+    
+    
